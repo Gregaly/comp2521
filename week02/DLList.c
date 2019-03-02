@@ -11,6 +11,10 @@
 #include <sysexits.h>
 
 #include "DLList.h"
+char *DLListFirst (DLList L);
+char *DLListLast (DLList L);	
+
+
 
 // data structures representing DLList
 
@@ -110,8 +114,20 @@ void putDLList (FILE *out, DLList L)
 {
 	assert (out != NULL);
 	assert (L != NULL);
+	fprintf(out, "current list:\n");
+	fprintf(out, "size: %d\n", DLListLength(L));
+	fprintf(out, "\t-----\n");
 	for (DLListNode *curr = L->first; curr != NULL; curr = curr->next)
-		fprintf (out, "%s\n", curr->value);
+		if (curr == L->curr) 
+		{
+			fprintf (out, "\t%s <--\n", curr->value);
+		}
+		else 
+		{
+			fprintf (out, "\t%s\n", curr->value);
+		}
+		
+	fprintf(out, "\t-----\n\n");
 }
 
 /** Check internal consistency of a DLList. */
@@ -226,6 +242,7 @@ bool DLListMoveTo (DLList L, int i)
  * new item becomes current item */
 void DLListBefore (DLList L, char *it)
 {
+
 	assert (L != NULL);
 	/// COMPLETE THIS FUNCTION
 
@@ -235,7 +252,6 @@ void DLListBefore (DLList L, char *it)
 	if (L->nitems == 0)
 	{
 		L->first = new;
-		L->curr = new;
 		L->last = new;
 	}
 	else if (current->prev == NULL)
@@ -251,6 +267,8 @@ void DLListBefore (DLList L, char *it)
 		new->next = current;
 		current->prev = new;
 	}
+
+	L->curr = new;
 	L->nitems++;
 }
 
@@ -282,6 +300,7 @@ void DLListAfter (DLList L, char *it)
 		current->next = new;
 		new->prev = current;
 	}
+	L->curr = new;
 	L->nitems++;
 }
 
@@ -294,7 +313,11 @@ void DLListDelete (DLList L)
 	assert (L != NULL);
 
 	DLListNode *current = L->curr;
-	if (L->nitems == 1)
+	if (L->nitems == 0) {
+		// empty ist
+		return;
+	}
+	else if (L->nitems == 1)
 	{
 		L->first = NULL;
 		L->curr = NULL;
@@ -303,13 +326,16 @@ void DLListDelete (DLList L)
 	}
 	else if (current->prev == NULL)
 	{
+		
+		// first element of the list
 		L->first = current->next;
-		current->next->prev = NULL;
-		L->curr = current->next;
+		L->first->prev = NULL;
+		L->curr = L->first;
 		freeDLListNode(current);
 	}
 	else if (current->next == NULL)
 	{
+		// last element of list
 		L->last = current->prev;
 		current->prev->next = NULL;
 		L->curr = current->prev;
@@ -317,12 +343,14 @@ void DLListDelete (DLList L)
 	}
 	else
 	{
+		// in the middle
 		current->prev->next = current->next;
 		current->next->prev = current->prev;
 		L->curr = current->next;
 		freeDLListNode(current);
 	}
 	L->nitems--;
+	
 }
 
 /** return number of elements in a list */
@@ -335,4 +363,16 @@ size_t DLListLength (DLList L)
 bool DLListIsEmpty (DLList L)
 {
 	return L->nitems == 0;
+}
+
+char *DLListLast (DLList L) 
+{
+	assert (L != NULL);
+	return L->last != NULL ? L->last->value : NULL;
+}
+
+char* DLListFirst (DLList L) 
+{
+	assert (L != NULL);
+	return L->first != NULL ? L->first->value : NULL;
 }

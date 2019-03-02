@@ -1,0 +1,354 @@
+adding an element before, uwu
+current list:
+size: 1
+	-----
+	uwu <--
+	-----
+
+adding an element before, owo
+current list:
+size: 2
+	-----
+	owo <--
+	uwu
+	-----
+
+adding an element before, umu
+current list:
+size: 3
+	-----
+	umu <--
+	owo
+	uwu
+	-----
+
+adding an element before, :3
+current list:
+size: 4
+	-----
+	:3 <--
+	umu
+	owo
+	uwu
+	-----
+
+adding an element before, xd
+current list:
+size: 5
+	-----
+	xd <--
+	:3
+	umu
+	owo
+	uwu
+	-----
+
+moving 1 forward
+current list:
+size: 5
+	-----
+	xd
+	:3 <--
+	umu
+	owo
+	uwu
+	-----
+
+moving 1 forward
+current list:
+size: 5
+	-----
+	xd
+	:3
+	umu <--
+	owo
+	uwu
+	-----
+
+moving 1 forward
+current list:
+size: 5
+	-----
+	xd
+	:3
+	umu
+	owo <--
+	uwu
+	-----
+
+moving 1 forward
+current list:
+size: 5
+	-----
+	xd
+	:3
+	umu
+	owo
+	uwu <--
+	-----
+
+moving 1 forward (at the end)
+current list:
+size: 5
+	-----
+	xd
+	:3
+	umu
+	owo
+	uwu <--
+	-----
+
+moving back 3
+current list:
+size: 5
+	-----
+	xd
+	:3 <--
+	umu
+	owo
+	uwu
+	-----
+
+inserting a 'sword' in the before
+current list:
+size: 6
+	-----
+	xd
+	sword <--
+	:3
+	umu
+	owo
+	uwu
+	-----
+
+moving to end
+current list:
+size: 6
+	-----
+	xd
+	sword
+	:3
+	umu
+	owo
+	uwu <--
+	-----
+
+inserting a 'shield' before last item
+current list:
+size: 7
+	-----
+	xd
+	sword
+	:3
+	umu
+	owo
+	shield <--
+	uwu
+	-----
+
+adding an element after, uwu
+current list:
+size: 1
+	-----
+	uwu <--
+	-----
+
+adding an element after, owo
+current list:
+size: 2
+	-----
+	uwu
+	owo <--
+	-----
+
+adding an element after, umu
+current list:
+size: 3
+	-----
+	uwu
+	owo
+	umu <--
+	-----
+
+adding an element after, :3
+current list:
+size: 4
+	-----
+	uwu
+	owo
+	umu
+	:3 <--
+	-----
+
+adding an element after, xd
+current list:
+size: 5
+	-----
+	uwu
+	owo
+	umu
+	:3
+	xd <--
+	-----
+
+moving 1 backwards
+current list:
+size: 5
+	-----
+	uwu
+	owo
+	umu
+	:3 <--
+	xd
+	-----
+
+moving 1 backwards
+current list:
+size: 5
+	-----
+	uwu
+	owo
+	umu <--
+	:3
+	xd
+	-----
+
+moving 1 backwards
+current list:
+size: 5
+	-----
+	uwu
+	owo <--
+	umu
+	:3
+	xd
+	-----
+
+moving 1 backwards
+current list:
+size: 5
+	-----
+	uwu <--
+	owo
+	umu
+	:3
+	xd
+	-----
+
+moving forward 3
+current list:
+size: 5
+	-----
+	uwu
+	owo
+	umu
+	:3 <--
+	xd
+	-----
+
+inserting a 'sword' in after
+current list:
+size: 6
+	-----
+	uwu
+	owo
+	umu
+	:3
+	sword <--
+	xd
+	-----
+
+moving to end
+current list:
+size: 6
+	-----
+	uwu
+	owo
+	umu
+	:3
+	sword
+	xd <--
+	-----
+
+inserting a 'shield' in after
+current list:
+size: 7
+	-----
+	uwu
+	owo
+	umu
+	:3
+	sword
+	xd
+	shield <--
+	-----
+
+loaded the list
+current list:
+size: 5
+	-----
+	1 <--
+	2
+	3
+	4
+	5
+	-----
+
+deleting first element
+current list:
+size: 4
+	-----
+	2 <--
+	3
+	4
+	5
+	-----
+
+moving 1 forward
+current list:
+size: 4
+	-----
+	2
+	3 <--
+	4
+	5
+	-----
+
+deleting an element in the middle
+current list:
+size: 3
+	-----
+	2
+	4 <--
+	5
+	-----
+
+moving 1 forward
+current list:
+size: 3
+	-----
+	2
+	4
+	5 <--
+	-----
+
+deleting an element from the end
+current list:
+size: 2
+	-----
+	2
+	4 <--
+	-----
+
+deleting all elements
+current list:
+size: 1
+	-----
+	2 <--
+	-----
+
+current list:
+size: 0
+	-----
+	-----
+
