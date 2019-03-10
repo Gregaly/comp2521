@@ -17,5 +17,7 @@ tests:
 	diff tree7.expected tree7.observed && echo OK
 	../bst < tree8 > tree8.observed
 	diff tree8.expected tree8.observed && echo OK
+	../bst < treeLast > treeLast.observed
+	diff treeLast.expected treeLast.observed && echo OK
 clean:
 	rm -f *.observed

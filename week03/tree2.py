@@ -2,7 +2,7 @@ import queue
 start = ord('o') + ord('w') + ord('o') 
 upper = 2 * start
 lower = 0
-limit = 32
+limit = 100
 
 DEBUG = False
 dprint = print if DEBUG else lambda *x:...
