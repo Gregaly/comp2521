@@ -279,8 +279,14 @@ void checkAllDelete (FILE *out) {
 	fprintf(out, "deleting all elements\n");
 	while (DLListLength(myList) != 0) {
 		DLListDelete(myList);
-		putDLList(out, myList);
+		
 	}
+	putDLList(out, myList);
+
+	fprintf(out, "deleting when empty\n");
+	// delete when its empty
+	DLListDelete(myList);
+	putDLList(out, myList);
 
 	freeDLList(myList);
 }
@@ -288,11 +294,14 @@ void checkAllDelete (FILE *out) {
 
 int main (void)
 {
-	FILE *out = fopen("out.txt", "w");
+	FILE *out = fopen("debug.txt", "w");
 	assert(out!=NULL);
 	//DLList myList = getDLList (stdin);
+	fprintf(out, "creating new list:\n");
 	checkAllBefore(out);
+	fprintf(out, "creating new list:\n");
 	checkAllAfter(out);
+	fprintf(out, "creating new list:\n");
 	checkAllDelete(out);
 
 

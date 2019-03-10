@@ -1,3 +1,4 @@
+creating new list:
 adding an element before, uwu
 current list:
 size: 1
@@ -146,6 +147,7 @@ size: 7
 	uwu
 	-----
 
+creating new list:
 adding an element after, uwu
 current list:
 size: 1
@@ -283,6 +285,7 @@ size: 7
 	shield <--
 	-----
 
+creating new list:
 loaded the list
 current list:
 size: 5
@@ -341,12 +344,6 @@ size: 2
 	-----
 
 deleting all elements
-current list:
-size: 1
-	-----
-	2 <--
-	-----
-
 current list:
 size: 0
 	-----

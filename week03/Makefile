@@ -1,6 +1,6 @@
 # COMP2521 19T1 ... lab 3 code
 
-CC	= 2521 3c
+CC	= dcc
 
 .PHONY: all
 all:	bst mkrand mkpref
