@@ -1,0 +1,29 @@
+Results for Tests on 5000 values
+
+Depth = depth of tree, Cost = average #comparisons per search
+
+
+             Ascending Order        Prefix Order        Random Order
+Insert
+Method       Depth      Cost     Depth      Cost     Depth      Cost
+
+L            5000       3114     13         12       28         16
+
+A            5000       1887     2954       1115     28         16
+
+R            206        63       20         14       23         13
+
+B            2492       952      1774       674      27         15
+
+S            5000->33   18       5000->29   18       31->1149   17
+
+V            13         12       14         12       15         12
+
+
+Notes (what the above indicates):
+L - Ascending order tree has a depth of 5000 and is one "stick". Suffers greatly for ascending order when searching a value that is not in the tree and is greater than the final value as it must traverse the entire tree. Otherwise has decent cost because data is random and it is reasonably balanced.
+A - Similar to L for ascending order but in opposite order since it inserts at the root. However, cost is half of L in this case as the tests are more likely to search a value greater than the end of the ascending tree in A than to search a value smaller than the end of the descending tree in L. Reversing the prefix order places it incorrectly causing it to be worse than random.
+R - Inserting using a random method gave relatively random results and a reasonably balanced tree.
+B - Similar trend to A although cost is minimised (compared to corresponding A) by periodically rebalancing the tree.
+S - Relatively low cost far all orders. Depth improved for ascending and prefix but inreased significantly for random order. Searching for each item once for random order causes the tree to very unbalanced and deep due to the rotations as it moves to the top.
+V - Consistently the lowest cost as it guaranteed to be balanced to within a difference of 1. 
