@@ -2,13 +2,13 @@
 
 for insert in L A B R S V
 do
-	for order in A P R
+	for order in A P R R R R
 	do
 		for size in 5000
 		do
 			echo ""
 			echo "Test: ./tlab $size $order $insert"
-			echo "t" | ./tlab $size $order $insert | grep -v Tree
+			echo "t" | ./tlab $size $order $insert | grep -m2 \#nodes | tail -n1
 		done
 	done
 done

@@ -1,5 +1,5 @@
 import queue
-start = ord('o') + ord('w') + ord('o') 
+start = 200
 upper = 2 * start
 lower = 0
 limit = 100
