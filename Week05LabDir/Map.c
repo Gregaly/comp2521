@@ -158,7 +158,9 @@ int connections (Map g, LocationID start, LocationID end, TransportID type[])
        if(current->type == BOAT){
           VList sea = g->connections[current->v];
          
-          while(sea != NULL){
+          while(sea->next != NULL){
+              //printf("%s\n", idToName(sea->v));
+              //fflush(stdout);
              if(sea->v == end){
                  type[count] = BOAT;
                  count++;

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+for place1 in Rome Naples Bordeaux Santander
+do
+	for place2 in Madrid Lisbon Florence Munich
+	do
+		echo ""
+		echo "Test: ./conn $place1 $place2"
+		echo "t" | ./conn $place1 $place2
+	done
+done
