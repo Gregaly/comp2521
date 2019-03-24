@@ -144,31 +144,35 @@ int connections (Map g, LocationID start, LocationID end, TransportID type[])
 {
 	assert (g != NULL);
 	// TODO: complete this fucntion
-	assert(start >= 0 && start <= NUM_MAP_LOCATIONS-1);
-    assert(end >= 0 && end <= NUM_MAP_LOCATIONS-1);
-    int count = 0;
-    VList current = g->connections[start];
-   
-    while(current != NULL){
-       if(current->v == end){
-          type[count] = current->type;
-          count++;
-       }
-      
-       if(current->type == BOAT){
-          VList sea = g->connections[current->v];
-         
-          while(sea->next != NULL){
-              //printf("%s\n", idToName(sea->v));
-              //fflush(stdout);
-             if(sea->v == end){
-                 type[count] = BOAT;
-                 count++;
-             }
-             sea = sea->next;
-          }
-       }
-       current = current->next;   
-    }  
-   return count;  // to keep the compiler happy
+	assert (validPlace (start) && "Invalid start");
+	assert (validPlace (end) && "Invalid end");
+	int count = 0;
+	VList current = g->connections[start];
+
+	// loop through all vertices connected to the starting location
+	while (current != NULL){
+		// a direct connection [rail, road]
+		if (current->v == end){
+			type[count] = current->type;
+			count++;
+		}
+
+		// encountered a sea, check if this sea connects to the destination via BOAT
+		if (current->type == BOAT){
+			VList sea = g->connections[current->v];
+
+			while (sea != NULL){
+				if (sea->v == end){
+					type[count] = BOAT;
+					count++;
+					break;
+				}
+				sea = sea->next;
+			}
+		}
+
+		// keep looping
+		current = current->next;   
+	}
+	return count;  // to keep the compiler happy
 }

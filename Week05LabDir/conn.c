@@ -21,12 +21,11 @@ int main (int argc, char **argv)
 	int id2 = (strlen (argv[2]) == 2)
 		? abbrevToID (argv[2])
 		: nameToID (argv[2]);
-
 	// check place validity
 	if (id1 == NOWHERE)
 		errx (EX_USAGE, "invalid place name '%s'", argv[1]);
-	if (id1 == NOWHERE)
-		errx (EX_USAGE, "invalid place name '%s'", argv[1]);
+	if (id2 == NOWHERE)
+		errx (EX_USAGE, "invalid place name '%s'", argv[2]);
 
 	Map europe = newMap ();
 
