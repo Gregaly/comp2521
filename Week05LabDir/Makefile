@@ -1,6 +1,6 @@
 # COMP2521 19T1 ... lab 5
 
-CC	= 2521 3c
+CC	= dcc
 
 .PHONY: all
 all: pl euro conn

@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sysexits.h>
+#include <string.h>
 
 #include "Map.h"
 #include "Places.h"
@@ -136,6 +137,16 @@ static void addConnections (Map g)
 		addLink (g, CONNECTIONS[i].v, CONNECTIONS[i].w, CONNECTIONS[i].t);
 }
 
+#define dprintf(fmt,...) // printf(fmt, __VA_ARGS__)
+
+static int shouldAdd (TransportID type[], int size, TransportID check) {
+	for (int i=0; i<size; i++){
+		if (check == type[i]) {
+			return 0;
+		}
+	}
+	return 1;
+}
 
 // Returns the number of direct connections between two nodes
 // Also fills the type[] array with the various connection types
@@ -149,26 +160,35 @@ int connections (Map g, LocationID start, LocationID end, TransportID type[])
 	int count = 0;
 	VList current = g->connections[start];
 
+	dprintf("End: %s\n", idToName(end));
 	// loop through all vertices connected to the starting location
-	while (current != NULL){
-		// a direct connection [rail, road]
+	while (current != NULL) {
+		dprintf("loc: %s, type: %s\n", idToName(current->v), transportToName(current->type));
+		// a direct connection [rail, road, sea]
 		if (current->v == end){
-			type[count] = current->type;
-			count++;
+			if (shouldAdd(type, count, current->type)) {
+				type[count] = current->type;
+				count++;
+			}
 		}
-
 		// encountered a sea, check if this sea connects to the destination via BOAT
 		if (current->type == BOAT){
-			VList sea = g->connections[current->v];
+			// check if its a connection over the sea
 
+			VList sea = g->connections[current->v];
+			
 			while (sea != NULL){
 				if (sea->v == end){
-					type[count] = BOAT;
-					count++;
-					break;
+					if (shouldAdd(type, count, current->type)) {
+						type[count] = BOAT;
+						count++;
+						break;
+					}
 				}
 				sea = sea->next;
 			}
+			
+			
 		}
 
 		// keep looping
