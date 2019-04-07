@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
 #include "graph.h"
 #include "html.h"
 #include "set.h"
@@ -66,43 +67,71 @@ int main (int argc, char **argv)
 
 	Graph web = newGraph(maxURLs);
 	Set seen = newSet();
+	printf("before maxURLS, %i\n", maxURLs);
 
+	// dfs search
 	while (!emptyStack(todo) && nVertices(web) < maxURLs) {
+		// the url to search
 		char *url = popFrom(todo);
 		printf("Current url: %s\n", url);
+		printf("Current url stored: %i\n", nVertices(web));
+
+		// ensure in unsw network
 		if (strstr(url, "unsw.edu.au") == NULL) continue;
 
-		//printf("test\n");
-
+		// error handling for network errors
 		if (!(handle = url_fopen (url, "r"))) {
 			fprintf (stderr, "Couldn't open %s\n", next);
 			exit (1);
 		}
 		while (!url_feof (handle)) {
+			// keep getting a full buffer of data each loop
 			url_fgets (buffer, sizeof (buffer), handle);
-			// fputs(buffer,stdout);
+
+			// initialize variables for html searching
 			int pos = 0;
 			char result[BUFSIZE];
 			memset (result, 0, BUFSIZE);
-			//printf("test2 %ss\n", buffer);
+
+			// search for new urls in the html buffer
+			// result is a url found on the html page
 			while ((pos = GetNextURL (buffer, url, result, pos)) > 0) {
 				printf ("\tFound: '%s'\n", result);
-				memset (result, 0, BUFSIZE);
 
-				if (nVertices(web) < maxURLs || !addEdge(web, url, result)) {
-
+				// this url needs to be copied, as
+				// the result buffer is overwritten each loop
+				char *resultCopy = strdup(result);
+				
+				// add edge between two urls iff the graph is not full of vertices
+				// this is to prevent getting too big...
+				if (nVertices(web) < maxURLs) {
+					addEdge(web, url, resultCopy);
 				}
-				if (!isElem(seen, result)) {
-					insertInto(seen, result);
+
+				// if this url has not been seen before,
+				// add it to the todo and seen stack/set
+				// allowing algorithm to view those later
+				if (!isElem(seen, url)) {
+					insertInto(seen, url);
 					pushOnto(todo, result);
 				}
+
+
+				memset (result, 0, BUFSIZE);
 			}
 		}
+
+
 
 		url_fclose (handle);
 		sleep(1);
 	}
+
+	printf("----------\n Showing Graph \n ---------\n");
+	showGraph(web, 0);
 	
+	// deallocate any memory in the set
+	// todo lol
 	dropStack(todo);
 	dropSet(seen);
 	dropGraph(web);

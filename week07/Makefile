@@ -1,6 +1,7 @@
 # COMP2521 19T1 ... week 7 lab
 
-CC	= 2521 3c
+CC	= gcc
+CFLAGS = -Wall -std=gnu99
 
 .PHONY: all
 all: ts tq tk tg crawl

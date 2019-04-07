@@ -9,6 +9,7 @@
 #include <string.h>
 #include <sysexits.h>
 
+
 #include "graph.h"
 
 #define strEQ(g, t) (strcmp ((g), (t)) == 0)
