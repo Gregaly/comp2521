@@ -62,19 +62,20 @@ int main (int argc, char **argv)
 	//    sleep(1)
 	// }
 
-	Stack todo = newStack();
-	pushOnto(todo, firstURL);
-
 	Graph web = newGraph(maxURLs);
 	Set seen = newSet();
-	printf("before maxURLS, %i\n", maxURLs);
+	Stack todo = newStack();
+
+	// push the first url
+	pushOnto(todo, strdup(firstURL));
+	insertInto(seen, firstURL);
 
 	// dfs search
 	while (!emptyStack(todo) && nVertices(web) < maxURLs) {
 		// the url to search
 		char *url = popFrom(todo);
 		printf("Current url: %s\n", url);
-		printf("Current url stored: %i\n", nVertices(web));
+		printf("\ttotal urls stored: %zu\n", nVertices(web));
 
 		// ensure in unsw network
 		if (strstr(url, "unsw.edu.au") == NULL) continue;
@@ -91,28 +92,27 @@ int main (int argc, char **argv)
 			// initialize variables for html searching
 			int pos = 0;
 			char result[BUFSIZE];
-			memset (result, 0, BUFSIZE);
+			memset(result, 0, BUFSIZE);
 
 			// search for new urls in the html buffer
 			// result is a url found on the html page
 			while ((pos = GetNextURL (buffer, url, result, pos)) > 0) {
-				printf ("\tFound: '%s'\n", result);
 
 				// this url needs to be copied, as
 				// the result buffer is overwritten each loop
-				char *resultCopy = strdup(result);
 				
 				// add edge between two urls iff the graph is not full of vertices
 				// this is to prevent getting too big...
 				if (nVertices(web) < maxURLs) {
-					addEdge(web, url, resultCopy);
+					addEdge(web, url, result);
 				}
 
 				// if this url has not been seen before,
 				// add it to the todo and seen stack/set
 				// allowing algorithm to view those later
-				if (!isElem(seen, url)) {
-					insertInto(seen, url);
+				if (!isElem(seen, result)) {
+					printf ("\t\tNew URL, adding: %s\n", url);
+					insertInto(seen, result);
 					pushOnto(todo, result);
 				}
 
@@ -122,7 +122,7 @@ int main (int argc, char **argv)
 		}
 
 
-
+		free(url);
 		url_fclose (handle);
 		sleep(1);
 	}

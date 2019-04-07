@@ -1,0 +1,282 @@
+Current url: http://legacy.handbook.unsw.edu.au/2018/index.html
+	total urls stored: 0
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+		New URL, adding: http://legacy.handbook.unsw.edu.au/2018/index.html
+Current url: http://www.unsw.edu.au/accessibility
+	total urls stored: 33
+Current url: http://www.unsw.edu.au/copyright-disclaimer
+	total urls stored: 33
+Current url: http://www.unsw.edu.au/privacy
+	total urls stored: 33
+Current url: http://cgi.cse.unsw.edu.au/~nss/feest/
+	total urls stored: 33
+		New URL, adding: http://cgi.cse.unsw.edu.au/~nss/feest/
+Current url: http://cgi.cse.unsw.edu.au/index.html
+	total urls stored: 34
+		New URL, adding: http://cgi.cse.unsw.edu.au/index.html
+Current url: http://www.cse.unsw.edu.au/
+	total urls stored: 35
+		New URL, adding: http://www.cse.unsw.edu.au/
+Current url: https://www.engineering.unsw.edu.au/computer-science-engineering/
+	total urls stored: 36
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+		New URL, adding: https://www.engineering.unsw.edu.au/computer-science-engineering/
+----------
+ Showing Graph 
+ ---------
+Graph has 40 vertices:
+Vertex: http://legacy.handbook.unsw.edu.au/2018/index.html
+connects to
+   http://www.unsw.edu.au
+   http://www.student3plus.unsw.edu.au
+   https://my.unsw.edu.au/
+   https://student.unsw.edu.au/
+   http://www.futurestudents.unsw.edu.au/
+   http://timetable.unsw.edu.au/
+   https://student.unsw.edu.au/node/62
+   http://www.library.unsw.edu.au/
+   http://legacy.handbook.unsw.edu.au/2018/
+   http://www.unsw.edu.au/faculties
+   https://student.unsw.edu.au/node/4431
+   https://student.unsw.edu.au/node/128
+   http://www.unsw.edu.au/contacts
+   http://legacy.handbook.unsw.edu.au/general/current/SSAPO/previousEditions.html
+   http://www.handbook.unsw.edu.au
+   http://legacy.handbook.unsw.edu.au/undergraduate/2018/
+   http://legacy.handbook.unsw.edu.au/postgraduate/2018/
+   http://legacy.handbook.unsw.edu.au/research/2018/
+   http://legacy.handbook.unsw.edu.au/nonaward/2018/
+   http://www.unsw.edu.au/future-students/domestic-undergraduate
+   http://www.unsw.edu.au/future-students/postgraduate-coursework
+   http://research.unsw.edu.au/future-students
+   http://www.international.unsw.edu.au/#1
+   https://student.unsw.edu.au/node/1334
+   https://moodle.telt.unsw.edu.au/login/index.php
+   https://student.unsw.edu.au/node/943
+   https://apply.unsw.edu.au/
+   https://student.unsw.edu.au/node/5450
+   http://cgi.cse.unsw.edu.au/~nss/feest/
+   http://www.unsw.edu.au/privacy
+   http://www.unsw.edu.au/copyright-disclaimer
+   http://www.unsw.edu.au/accessibility
+Vertex: http://www.unsw.edu.au
+connects to
+Vertex: http://www.student3plus.unsw.edu.au
+connects to
+Vertex: https://my.unsw.edu.au/
+connects to
+Vertex: https://student.unsw.edu.au/
+connects to
+Vertex: http://www.futurestudents.unsw.edu.au/
+connects to
+Vertex: http://timetable.unsw.edu.au/
+connects to
+Vertex: https://student.unsw.edu.au/node/62
+connects to
+Vertex: http://www.library.unsw.edu.au/
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/2018/
+connects to
+Vertex: http://www.unsw.edu.au/faculties
+connects to
+Vertex: https://student.unsw.edu.au/node/4431
+connects to
+Vertex: https://student.unsw.edu.au/node/128
+connects to
+Vertex: http://www.unsw.edu.au/contacts
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/general/current/SSAPO/previousEditions.html
+connects to
+Vertex: http://www.handbook.unsw.edu.au
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/undergraduate/2018/
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/postgraduate/2018/
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/research/2018/
+connects to
+Vertex: http://legacy.handbook.unsw.edu.au/nonaward/2018/
+connects to
+Vertex: http://www.unsw.edu.au/future-students/domestic-undergraduate
+connects to
+Vertex: http://www.unsw.edu.au/future-students/postgraduate-coursework
+connects to
+Vertex: http://research.unsw.edu.au/future-students
+connects to
+Vertex: http://www.international.unsw.edu.au/#1
+connects to
+Vertex: https://student.unsw.edu.au/node/1334
+connects to
+Vertex: https://moodle.telt.unsw.edu.au/login/index.php
+connects to
+Vertex: https://student.unsw.edu.au/node/943
+connects to
+Vertex: https://apply.unsw.edu.au/
+connects to
+Vertex: https://student.unsw.edu.au/node/5450
+connects to
+Vertex: http://cgi.cse.unsw.edu.au/~nss/feest/
+connects to
+   http://cgi.cse.unsw.edu.au/index.html
+Vertex: http://www.unsw.edu.au/privacy
+connects to
+Vertex: http://www.unsw.edu.au/copyright-disclaimer
+connects to
+Vertex: http://www.unsw.edu.au/accessibility
+connects to
+Vertex: http://cgi.cse.unsw.edu.au/index.html
+connects to
+   http://www.cse.unsw.edu.au/
+Vertex: http://www.cse.unsw.edu.au/
+connects to
+   https://www.engineering.unsw.edu.au/computer-science-engineering/
+Vertex: https://www.engineering.unsw.edu.au/computer-science-engineering/
+connects to
+   https://www.unsw.edu.au
+   https://www.engineering.unsw.edu.au
+   https://computer-science-engineering/
+   https://computer-science-engineering/news
+Vertex: https://www.unsw.edu.au
+connects to
+Vertex: https://www.engineering.unsw.edu.au
+connects to
+Vertex: https://computer-science-engineering/
+connects to
+Vertex: https://computer-science-engineering/news
+connects to
