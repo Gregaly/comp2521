@@ -39,19 +39,19 @@ def sorted(list):
 			writer.writerow([size, useIntAvg])
 			file.flush()
 
-def random():
-	with open("out.csv", "w") as file:
+def random(list):
+	with open("randomB.csv", "w") as file:
 		# create initial file
 		writer = csv.writer(file, delimiter=",")
 		
-		for size in sizes:
+		for size in list:
 			
 			print("testing size", size)
 
 			# unsorted
 			sum = 0
 			for iter in range(iterations):
-				myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./sortA > /dev/null ;"])
+				myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./sortB > /dev/null ;"])
 
 				sum += float(myTime)
 
@@ -62,4 +62,5 @@ def random():
 			writer.writerow([size, useIntAvg])
 			file.flush()
 
-sorted(sizes)
+#sorted(sizes)
+random(sizes)
