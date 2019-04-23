@@ -7,6 +7,7 @@ import random
 
 
 sizes = list(range(5, 100, 5)) + list(range(200, 900, 100)) + list(range(1000, 10000, 1000)) + list(range(10000, 100000, 10000)) + list(range(100000, 1000000, 100000))
+sizesA = list(range(5, 100, 5)) + list(range(200, 900, 100)) + list(range(1000, 5000, 1000))
 print(sizes)
 iterations = 5
 
@@ -22,14 +23,14 @@ def reversed(list, fileName, sortName):
 			# create initial file
 			writer = csv.writer(file, delimiter=",")
 			
-			for size in list:
+			for size in list:	
 				
 				print("testing size", size)
 
 				# unsorted
 				sum = 0
 				for iter in range(iterations):
-					myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./{sortName} > /dev/null ;"])
+					myTime = out([f"./gen {size} D | /usr/bin/time --format=\"%U\" ./{sortName} > /dev/null ;"])
 
 					sum += float(myTime)
 
@@ -39,7 +40,7 @@ def reversed(list, fileName, sortName):
 
 				writer.writerow([size, useIntAvg])
 				file.flush()
-	except Exception as e:
+	except BaseException as e:
 		print("an exception happened!", e)
 
 def sorted(list, fileName, sortName):
@@ -65,7 +66,7 @@ def sorted(list, fileName, sortName):
 
 				writer.writerow([size, useIntAvg])
 				file.flush()
-	except Exception as e :
+	except BaseException as e :
 		print("an exception happened!", e)
 
 def random(list, fileName, sortName):
@@ -91,14 +92,14 @@ def random(list, fileName, sortName):
 
 				writer.writerow([size, useIntAvg])
 				file.flush()
-	except Exception as e:
+	except BaseException as e:
 		print("an exception happened!", e)
 
-#sorted(sizes, "sortedA.csv", "sortA")
-sorted(sizes, "sortedB.csv", "sortB")
+#sorted(sizesA, "sortedA.csv", "sortA")
+#sorted(sizes, "sortedB.csv", "sortB")
 
-# random(sizes, "randomA.csv", "sortA")
-# random(sizes, "randomB.csv", "sortB")
+#random(sizesA, "randomA.csv", "sortA")
+#random(sizes, "randomB.csv", "sortB")
 
-# reversed(sizes, "reversedA.csv", "sortA")
-# reversed(sizes, "reversedB.csv", "sortB")
+reversed(sizesA, "reversedA.csv", "sortA")
+reversed(sizes, "reversedB.csv", "sortB")
