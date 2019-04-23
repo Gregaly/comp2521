@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/python3
 import csv
 import os
 import sys
@@ -16,51 +16,89 @@ def out(command):
 	result = run(command, stdout=PIPE, stderr=PIPE, universal_newlines=True, shell=True)
 	return result.stderr
 
-def sorted(list):
-	with open("sortedB.csv", "w") as file:
-		# create initial file
-		writer = csv.writer(file, delimiter=",")
-		
-		for size in list:
+def reversed(list, fileName, sortName):
+	try:
+		with open(fileName, "w") as file:
+			# create initial file
+			writer = csv.writer(file, delimiter=",")
 			
-			print("testing size", size)
+			for size in list:
+				
+				print("testing size", size)
 
-			# unsorted
-			sum = 0
-			for iter in range(iterations):
-				myTime = out([f"./gen {size} A | /usr/bin/time --format=\"%U\" ./sortB > /dev/null ;"])
+				# unsorted
+				sum = 0
+				for iter in range(iterations):
+					myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./{sortName} > /dev/null ;"])
 
-				sum += float(myTime)
+					sum += float(myTime)
 
-			useIntAvg = '%s' % float('%.2g' % (sum / iterations))
+				useIntAvg = '%s' % float('%.2g' % (sum / iterations))
 
-			print("useIntList: {}".format(useIntAvg))
+				print("useIntList: {}".format(useIntAvg))
 
-			writer.writerow([size, useIntAvg])
-			file.flush()
+				writer.writerow([size, useIntAvg])
+				file.flush()
+	except Exception as e:
+		print("an exception happened!", e)
 
-def random(list):
-	with open("randomB.csv", "w") as file:
-		# create initial file
-		writer = csv.writer(file, delimiter=",")
-		
-		for size in list:
+def sorted(list, fileName, sortName):
+	try:
+		with open(fileName, "w") as file:
+			# create initial file
+			writer = csv.writer(file, delimiter=",")
 			
-			print("testing size", size)
+			for size in list:
+				
+				print("testing size", size)
 
-			# unsorted
-			sum = 0
-			for iter in range(iterations):
-				myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./sortB > /dev/null ;"])
+				# unsorted
+				sum = 0
+				for iter in range(iterations):
+					myTime = out([f"./gen {size} A | /usr/bin/time --format=\"%U\" ./{sortName} > /dev/null ;"])
 
-				sum += float(myTime)
+					sum += float(myTime)
 
-			useIntAvg = '%s' % float('%.2g' % (sum / iterations))
+				useIntAvg = '%s' % float('%.2g' % (sum / iterations))
 
-			print("useIntList: {}".format(useIntAvg))
+				print("useIntList: {}".format(useIntAvg))
 
-			writer.writerow([size, useIntAvg])
-			file.flush()
+				writer.writerow([size, useIntAvg])
+				file.flush()
+	except Exception as e :
+		print("an exception happened!", e)
 
-#sorted(sizes)
-random(sizes)
+def random(list, fileName, sortName):
+	try:
+		with open(fileName, "w") as file:
+			# create initial file
+			writer = csv.writer(file, delimiter=",")
+			
+			for size in list:
+				
+				print("testing size", size)
+
+				# unsorted
+				sum = 0
+				for iter in range(iterations):
+					myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./{fileName} > /dev/null ;"])
+
+					sum += float(myTime)
+
+				useIntAvg = '%s' % float('%.2g' % (sum / iterations))
+
+				print("useIntList: {}".format(useIntAvg))
+
+				writer.writerow([size, useIntAvg])
+				file.flush()
+	except Exception as e:
+		print("an exception happened!", e)
+
+#sorted(sizes, "sortedA.csv", "sortA")
+sorted(sizes, "sortedB.csv", "sortB")
+
+random(sizes, "randomA.csv", "sortA")
+random(sizes, "randomB.csv", "sortB")
+
+reversed(sizes, "reversedA.csv", "sortA")
+reversed(sizes, "reversedB.csv", "sortB")
