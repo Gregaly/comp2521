@@ -22,9 +22,9 @@ def reversed(list, fileName, sortName):
 		with open(fileName, "w") as file:
 			# create initial file
 			writer = csv.writer(file, delimiter=",")
-			
-			for size in list:	
-				
+
+			for size in list:
+
 				print("testing size", size)
 
 				# unsorted
@@ -48,9 +48,9 @@ def sorted(list, fileName, sortName):
 		with open(fileName, "w") as file:
 			# create initial file
 			writer = csv.writer(file, delimiter=",")
-			
+
 			for size in list:
-				
+
 				print("testing size", size)
 
 				# unsorted
@@ -74,9 +74,9 @@ def random(list, fileName, sortName):
 		with open(fileName, "w") as file:
 			# create initial file
 			writer = csv.writer(file, delimiter=",")
-			
+
 			for size in list:
-				
+
 				print("testing size", size)
 
 				# unsorted
@@ -95,11 +95,11 @@ def random(list, fileName, sortName):
 	except BaseException as e:
 		print("an exception happened!", e)
 
-#sorted(sizesA, "sortedA.csv", "sortA")
-#sorted(sizes, "sortedB.csv", "sortB")
+sorted(sizesA, "sortedA.csv", "sortA")
+sorted(sizes, "sortedB.csv", "sortB")
 
 #random(sizesA, "randomA.csv", "sortA")
 #random(sizes, "randomB.csv", "sortB")
 
-reversed(sizesA, "reversedA.csv", "sortA")
-reversed(sizes, "reversedB.csv", "sortB")
+#reversed(sizesA, "reversedA.csv", "sortA")
+#reversed(sizes, "reversedB.csv", "sortB")
