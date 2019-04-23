@@ -81,7 +81,7 @@ def random(list, fileName, sortName):
 				# unsorted
 				sum = 0
 				for iter in range(iterations):
-					myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./{fileName} > /dev/null ;"])
+					myTime = out([f"./gen {size} R | /usr/bin/time --format=\"%U\" ./{sortName} > /dev/null ;"])
 
 					sum += float(myTime)
 
@@ -97,8 +97,8 @@ def random(list, fileName, sortName):
 #sorted(sizes, "sortedA.csv", "sortA")
 sorted(sizes, "sortedB.csv", "sortB")
 
-random(sizes, "randomA.csv", "sortA")
-random(sizes, "randomB.csv", "sortB")
+# random(sizes, "randomA.csv", "sortA")
+# random(sizes, "randomB.csv", "sortB")
 
-reversed(sizes, "reversedA.csv", "sortA")
-reversed(sizes, "reversedB.csv", "sortB")
+# reversed(sizes, "reversedA.csv", "sortA")
+# reversed(sizes, "reversedB.csv", "sortB")
